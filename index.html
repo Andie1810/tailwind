@@ -3,17 +3,56 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
+    <title>Dribble</title>
     <link rel="stylesheet" href="screen.css">
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <h1>Home</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
+  <body class="bg-zinc-50 text-zinc-800 mx-auto px-8">
+    <nav class="flex items-center justify-between px-6 py-4">
+      <div class="flex items-center gap-6">
+        <button class="inline-flex w-full justify-center gap-x-1.5 border rounded-md px-4 py-2 text-lg font-medium shadow-xs inset-ring-1 inset-ring-zinc-300 hover:shadow-sm">
+          Popular
+          <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="-mr-1 size-5">
+            <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+          </svg>
+        </button>
+        <a class="px-4 py-2 bg-zinc-100 rounded-full text-lg font-semibold hover:bg-zinc-200">Discover</a>
+        <a class="px-2 text-lg font-semibold hover:text-zinc-500">Animation</a>
+        <a class="px-2 text-lg font-semibold hover:text-zinc-500">Branding</a>
+        <a class="px-2 text-lg font-semibold hover:text-zinc-500">Illustration</a>
+        <a class="px-2 text-lg font-semibold hover:text-zinc-500">Mobile</a>
+        <a class="px-2 text-lg font-semibold hover:text-zinc-500">Print</a>
+        <img src="angle-right-solid-full.svg" class="w-5">
+      </div>
+      <button class="flex items-center gap-x-1.5 border rounded-full px-4 py-2 text-lg hover:shadow-sm">
+          <img src="filter-list.svg" class="w-5">
+          Filters
+        </button>
     </nav>
-    <script src="index.js"></script>
+
+    <div class="mx-auto px-6 py-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-6">
+        <div class="group">
+          <img src="1.png" class="w-full rounded-xl">
+          <div class="flex items-center justify-between mt-3">
+            <div class="flex items-center gap-2">
+              <img src="circle-user-solid-full.svg" class="w-8">
+              <h5 class="text-lg font-medium">Siege Media</h5>
+              <span class="text-xs font-bold bg-zinc-300 text-zinc-50 px-1 py-1 rounded-md">TEAM</span>
+            </div>
+            <div class="flex items-center gap-3 text-sm">
+              <div class="flex items-center gap-1">
+                <img src="heart-solid-full.svg" class="w-5">
+                <span>193</span>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="eye-solid-full.svg" class="w-5">
+                <span>67.4k</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
